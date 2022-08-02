@@ -1,0 +1,175 @@
+<resources>
+    <string name="app_name">App lock</string>
+    <string name="app_name2">AppClean</string>
+    <string name="app_name_empty"></string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="share_friends">Share with friends</string>
+    <string name="feed_back">Feedback</string>
+    <string name="setting">Settings</string>
+    <string name="themes">Themes</string>
+    <string name="kidzone">Kid Zone</string>
+    <string name="proximily_detection">Proximity Detection</string>
+    <string name="intruder_selfie">Intruder Selfie</string>
+    <string name="lock_option">Lock Options</string>
+    <string name="detect_when_remove_pocket">Detect when remove form pocket</string>
+    <string name="motion_detection">Motion detection</string>
+    <string name="detect_when_device_move">Detect when devices is moved</string>
+    <string name="charger_detection">Charger Detection</string>
+    <string name="detect_when_charger_disconnect">Detect when charger is disconnected</string>
+    <string name="child_restricted_area">Child restricted area</string>
+    <string name="activate">Activate</string>
+    <string name="enable">Enable</string>
+    <string name="social_app">Social network application</string>
+    <string name="third_app">Third party application</string>
+    <string name="sound">Sound</string>
+    <string name="adjust_sound">Adjust sound</string>
+    <string name="alarm_tone">Alarm Tone</string>
+    <string name="customize_alarm_tone">Customize Alarm Tone</string>
+    <string name="timer">Timer</string>
+    <string name="timer_according">Set timer according to need</string>
+    <string name="change_pin_code">Changer your PIN code</string>
+    <string name="sercurity_question">Sercurity Question</string>
+    <string name="full_charger_alarm">full Charger Alarm</string>
+    <string name="notifi_charger_connected">Notify When Charger Is Connected</string>
+    <string name="vibrate_alarm">Vibrate Device During Alarm</string>
+    <string name="flash_during_alarm">Turn On Flash Light During Alarm</string>
+    <string name="reset_password">Reset password</string>
+    <string name="pin_code_lock">Pin Code Lock</string>
+    <string name="switch_to_pin">Switch to PIN</string>
+    <string name="switch_to_patern">Switch to PATTERN</string>
+    <string name="hide_pattern">Hide Pattern draw path</string>
+    <string name="more_app">More Apps</string>
+    <string name="rate_us">Rate Us</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="share">Share</string>
+    <string name="set_timer">Set Timer</string>
+    <string name="seconds_05">05 Seconds</string>
+    <string name="seconds_10">10 Seconds</string>
+    <string name="seconds_15">15 Seconds</string>
+    <string name="seconds_20">20 Seconds</string>
+    <string name="seconds_25">25 Seconds</string>
+    <string name="seconds_30">30 Seconds</string>
+    <string name="save">Save</string>
+    <string name="less_than_50_letters">Less than 50 letters</string>
+    <string name="question">Question</string>
+    <string name="input_your_question">Input your question</string>
+    <string name="answer">Answer</string>
+    <string name="tone">Tone %d</string>
+    <string name="next">Next</string>
+    // Pattern code
+    <string name="enter_pattern_code">Enter password</string>
+    <string name="enter_new_pattern_code">Enter a new password</string>
+    <string name="message_confirm_pattern_code">Please confirm password</string>
+    <string name="error_message_confirm_pattern_code">Password dont match</string>
+    <string name="error_message_check_pattern_code">Password error</string>
+    <string name="set_up_question">Question</string>
+    <string name="message_fill_all_information">" Please fill all information"</string>
+    <string name="message_confirm_pattern_code_success">Confirm success</string>
+    <string name="action_confirm">Confirm</string>
+    <string name="message_change_pattern_code_success">Change success</string>
+    <string name="pin_incorrect">Incorrect PIN: %s</string>
+    <string name="no_data">No item data to display</string>
+    <string name="incorrect_password_entries">Incorrect Password Entries</string>
+    <string name="empty">Empty</string>
+
+    <string name="once">Once</string>
+    <string name="times_3">3 Times</string>
+    <string name="times_5">5 Times</string>
+    // Pin code
+    <string name="enter_pin_code">Enter password</string>
+    <string name="enter_new_pin_code">Enter a new password</string>
+    <string name="message_confirm_pin_code">Please confirm password</string>
+    <string name="error_message_confirm_pin_code">Password dont match</string>
+    <string name="error_message_check_pin_code">Password error</string>
+    <string name="message_confirm_pin_code_success">Confirm success</string>
+    <string name="message_anser_empty">Anser must not empty</string>
+    <string name="message_error_question_anser">Question or anser are wrong</string>
+    <string name="message_change_question_anser_success">Change question success</string>
+    <string name="message_enter_new_question_anser">Enter new question and anser to change</string>
+
+    <string name="app_running">%s is running</string>
+    <string name="activate_alarm">Alarm Activated</string>
+    <string name="message_proximity_actived">Detection proximity actived</string>
+    <string name="message_motion_actived">Detection motion actived</string>
+    <string name="message_charger_actived">Detection charger actived</string>
+
+    //
+    <string name="grant_now">Grant Now</string>
+    <string name="permission_needed">Permission Needed</string>
+    <string name="grant_app_permission">Grant App Usage Permission for a comprehensive phone scan effect</string>
+    <string name="write_setting_per">write setting permission</string>
+    <string name="usage_access_permission">usage Access permission</string>
+    <string name="external_storage_permission">Grant access to the external storage memory in the device</string>
+    <string name="camera_permission">Grant access to the camera in the device</string>
+    <string name="write_setting_permission">"Grant permission to change device settings</string>
+    <string name="listen_notification_permission">Grant permission to listen to device notifications</string>
+    <string name="overlay_permission">Grant permission to display on other applications</string>
+    <string name="accessibility_setting_permission">Grant permission to use accessibility service</string>
+    <string name="find_and_grant">Find %s and grant %s</string>
+    <string name="floatint_windown_per">floating Window permission</string>
+    <string name="accessibility_permission">accessibility permission</string>
+    <string name="listener_notification_per">listen notification permission</string>
+
+    <string name="accessibility_service_description">Tap on top right use to Accessiblility service.
+        \n
+        \nThis will allow Applock to: Operation is more stable
+        \n
+    \nYou will have to accept Android system warinings when enabling Accessibility service. Applock will not use these for any orther purpose than listed here.</string>
+    <string name="ok">OK</string>
+    <string name="content_set_up_password">Please set up a password for the first time use</string>
+    <string name="turn_on_charger">Please plug in charger before turning on alarm.</string>
+    <string name="forgot_password">Forgot password</string>
+    <string name="message_plug_in_before_using">Please plug in the charger before using</string>
+    <string name="finger_unlock">Fingerprint Unlock</string>
+    <string name="menu_home">LockApp</string>
+    <string name="menu_theme">Theme</string>
+    <string name="menu_app_mask">App Mask</string>
+    <string name="menu_security">Security</string>
+    <string name="menu_setting">Setting</string>
+    <string name="menu_ivy">IVY Family</string>
+    <string name="save_ok">Saved</string>
+    <string name="limit_lock_time">Limited lock time</string>
+    <string name="collection">Collection</string>
+    <string name="change_password">Change password</string>
+    <string name="switch_to_password">Switch password</string>
+    <string name="advanced_detection">Advanced protection</string>
+    <string name="rate">Rate</string>
+    <string name="limited_lock_time">Limited lock time</string>
+    <string name="lock_new_app">New app lock</string>
+     <string name="alway_lock">Always locked</string>
+    <string name="five_minutes">5 minutes</string>
+    <string name="phone_screen_off">Until the phone screen turns off</string>
+
+    <string name="stop_applock">Will your app be unprotected if you stop applock?</string>
+    <string name="cancel">Cancel</string>
+
+    <string name="apply">Apply</string>
+    <string name="map">Map</string>
+    <string name="evaluate">Evaluate</string>
+    <string name="achieve">Achievements</string>
+    <string name="health">Health monitoring</string>
+    <string name="app_mask">App Mask</string>
+
+    <string name="changed_icon">Changed Icon.</string>
+    <string name="changed_icon_message">Replacing the Calculator App icon may take few seconds depending on phone\'s launcher. If new icon doesn\'t appear within a few seconds, restart your device.</string>
+    <string name="advanced_protection">Advanced protection</string>
+    <string name="header_advanced">For perfect protection, we recommend that you allow all of the rights.</string>
+    <string name="used_camera">Use the camera</string>
+    <string name="take_photos_intruders">Take photos of intruders</string>
+    <string name="stable_operation">Stable operation</string>
+    <string name="keep_applock_smoothly">Keep Applock runs smoothly</string>
+    <string name="energy_saving">Energy saving</string>
+    <string name="saving_extending_pin_life">Saving on extending PIN life</string>
+    <string name="popup">Popup</string>
+    <string name="keep_applock_background">Keep Applock running in the background</string>
+    <string name="change_language">Change Language</string>
+    <string name="action_search">Search</string>
+    <string name="app_lock">App lock</string>
+
+</resources>

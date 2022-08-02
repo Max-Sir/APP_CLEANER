@@ -1,0 +1,96 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="@style/Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.WindowTransition">
+        <item name="android:activityOpenEnterAnimation">@anim/pull_in_right</item>
+        <item name="android:activityOpenExitAnimation">@anim/push_out_left</item>
+        <item name="android:activityCloseEnterAnimation">@anim/pull_in_left</item>
+        <item name="android:activityCloseExitAnimation">@anim/push_out_right</item>
+    </style>
+
+    <style name="Theme.AppCompat.Translucent" parent="@style/AppTheme">
+        <!--        <item name="android:windowBackground">@android:color/transparent</item>-->
+        <item name="android:windowBackground">@color/colorPrimaryDark</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@style/AppTheme.WindowTransition</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowActionBar">false</item>
+    </style>
+
+
+
+    <!-- Base application theme. -->
+    <style name="Theme.AntiTheft" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+<!--        <item name="colorControlHighlight">@color/colorPrimary_10</item>-->
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textSize">@dimen/_13sdp</item>
+        <item name="android:windowBackground">@color/colorPrimaryDark</item>
+        <!-- Customize your theme here. -->
+        <item name="android:windowAnimationStyle">@style/WindowTransition</item>
+        <item name="windowActionModeOverlay">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+    <style name="Theme.AntiTheft.PopupMenu" parent="Theme.AntiTheft">
+        <item name="android:popupMenuStyle">@style/PopupMenu</item>
+        <item name="android:textAppearanceLargePopupMenu">@style/PopupMenuTextAppearanceLarge</item>
+        <item name="android:textAppearanceSmallPopupMenu">@style/PopupMenuTextAppearanceSmall</item>
+
+    </style>
+
+
+
+
+
+    <style name="Theme.AntiTheft.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.AntiTheft.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="WindowTransition">
+        <item name="android:activityOpenEnterAnimation">@anim/pull_in_right</item>
+        <item name="android:activityOpenExitAnimation">@anim/push_out_left</item>
+        <item name="android:activityCloseEnterAnimation">@anim/pull_in_left</item>
+        <item name="android:activityCloseExitAnimation">@anim/push_out_right</item>
+    </style>
+
+    <style name="swguide">
+        <item name="trackTint">@android:color/darker_gray</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:clickable">false</item>
+        <item name="android:layout_marginRight">10dp</item>
+    </style>
+
+     <style name="Theme.Transparent" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@color/white_20</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="colorPrimaryDark">@color/white_20</item>
+    </style>
+
+    <style name="TextStyleCustomAccent">
+        <item name="android:textColor">?colorAccent</item>
+    </style>
+    
+    <style name="ToolbarStyle">
+        <item name="colorAccent">@color/white</item>
+    </style>
+
+</resources>

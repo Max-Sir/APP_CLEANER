@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark">
+
+    <include
+        android:id="@+id/layout_padding"
+        layout="@layout/layout_toolbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/layout_padding"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/im_header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:src="@drawable/bg_header" />
+
+            <RelativeLayout
+                android:id="@+id/ll_ram_progress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/bg_ram_progress"
+                android:padding="@dimen/_5sdp">
+
+                <com.lubuteam.sellsourcecode.supercleaner.widget.circularprogressindicator.CircularProgressIndicator
+                    android:id="@+id/prg_ram_used"
+                    android:layout_width="@dimen/_100sdp"
+                    android:layout_height="@dimen/_100sdp"
+                    android:layout_centerInParent="true"
+                    app:direction="clockwise"
+                    app:drawDot="false"
+                    app:fillBackground="false"
+                    app:gradientEndColor="@color/color_cdbbff"
+                    app:gradientType="linear"
+                    app:progressBackgroundColor="@color/white_20"
+                    app:progressBackgroundStrokeWidth="@dimen/_5sdp"
+                    app:progressColor="@color/color_7373e4"
+                    app:progressStrokeWidth="@dimen/_5sdp"
+                    app:startAngle="255"
+                    app:textColor="@android:color/transparent" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_ram_used"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_35sdp"
+                        android:textStyle="bold"
+                        tools:text="65" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/percent"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_15sdp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/ll_ram_progress"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/_13sdp"
+                android:text="@string/ram"
+                android:textAllCaps="true"
+                android:textColor="@color/color_a5a5ff"
+                android:textSize="@dimen/_11sdp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_create_shortcut"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@drawable/btn_bolder_white"
+            android:drawablePadding="@dimen/_5sdp"
+            android:gravity="center_vertical"
+            android:padding="@dimen/_7sdp"
+            android:text="@string/create_shortcut"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/_10sdp"
+            app:drawableRightCompat="@drawable/ic_pin" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@color/color_1f1137"
+            android:paddingLeft="@dimen/_15sdp"
+            android:paddingTop="@dimen/_5sdp"
+            android:paddingRight="@dimen/_15sdp"
+            android:paddingBottom="@dimen/_5sdp">
+
+            <TextView
+                android:id="@+id/tv_distub"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/not_distub"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/_12sdp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_distub"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:layout_marginRight="@dimen/_30sdp"
+                android:layout_toLeftOf="@+id/cb_hide_notification"
+                android:text="@string/hide_notification_all"
+                android:textColor="@color/color_a8a8a8"
+                android:textSize="@dimen/_9sdp" />
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/cb_hide_notification"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:clickable="false"
+                android:theme="@style/Custom.Widget.SwitchCompat" />
+
+            <View
+                android:id="@+id/view_checkbox"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@color/color_1f1137"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/_15sdp"
+            android:paddingTop="@dimen/_5sdp"
+            android:paddingRight="@dimen/_15sdp"
+            android:paddingBottom="@dimen/_5sdp">
+
+            <TextView
+                android:id="@+id/tv_number_app"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/_10sdp"
+                tools:text="@string/game_add" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rcv_game_boost"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:overScrollMode="never"
+                app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+                app:spanCount="4"
+                tools:listitem="@layout/item_app_icon" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/ll_animation_boost_game"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#4D000000"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/im_rocket_boost"
+            android:layout_width="@dimen/_120sdp"
+            android:layout_height="@dimen/_120sdp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ic_rocket_game_boost" />
+
+        <ImageView
+            android:id="@+id/im_iconApp"
+            android:layout_width="@dimen/_35sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ic_logo" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

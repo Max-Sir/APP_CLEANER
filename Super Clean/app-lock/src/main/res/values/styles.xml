@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="PopupMenu" parent="@android:style/Widget.PopupMenu">
+        <item name="android:popupBackground">@color/color_1f1137</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="PopupMenuTextAppearanceSmall" parent="@android:style/TextAppearance.DeviceDefault.Widget.PopupMenu.Small">
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="PopupMenuTextAppearanceLarge" parent="@android:style/TextAppearance.DeviceDefault.Widget.PopupMenu.Large">
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="Custom.Widget.SwitchCompat" parent="Widget.AppCompat.CompoundButton.Switch">
+        <item name="colorControlActivated">@color/color_a5a5ff</item>
+        <item name="colorSwitchThumbNormal">@color/color_4d4962</item>
+    </style>
+
+</resources>

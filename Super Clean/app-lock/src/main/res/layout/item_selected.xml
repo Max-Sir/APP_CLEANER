@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RadioButton
+        android:id="@+id/rd_select"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:button="@drawable/selector_radio"
+        android:padding="@dimen/_8sdp"
+        android:text="@string/seconds_05"
+        android:textColor="@android:color/white" />
+
+</LinearLayout>

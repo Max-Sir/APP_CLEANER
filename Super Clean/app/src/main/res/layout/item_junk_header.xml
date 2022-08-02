@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/selector_row"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:padding="@dimen/_7sdp">
+
+    <ImageView
+        android:layout_width="@dimen/_20sdp"
+        android:layout_height="@dimen/_20sdp"
+        android:layout_marginEnd="@dimen/_5sdp"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/ic_keyboard_arrow_down_grey_500_36dp"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/item_header_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginEnd="@dimen/_5sdp"
+        android:layout_weight="1"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/_12sdp"
+        tools:text="Group Name" />
+
+    <TextView
+        android:id="@+id/tvHeaderSize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:paddingStart="@dimen/_7sdp"
+        android:paddingEnd="@dimen/_7sdp"
+        android:textColor="@color/color_726882"
+        android:textSize="@dimen/_12sdp"
+        tools:text="74 MB" />
+
+    <CheckBox
+        android:id="@+id/ckHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:layout_marginEnd="@dimen/_3sdp"
+        android:button="@drawable/bg_checkbox" />
+
+</LinearLayout>

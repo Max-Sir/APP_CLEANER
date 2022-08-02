@@ -1,0 +1,92 @@
+<resources>
+
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="@style/Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.WindowTransition">
+        <item name="android:activityOpenEnterAnimation">@anim/pull_in_right</item>
+        <item name="android:activityOpenExitAnimation">@anim/push_out_left</item>
+        <item name="android:activityCloseEnterAnimation">@anim/pull_in_left</item>
+        <item name="android:activityCloseExitAnimation">@anim/push_out_right</item>
+    </style>
+
+    <style name="Theme.AppCompat.Translucent" parent="@style/AppTheme">
+        <!--        <item name="android:windowBackground">@android:color/transparent</item>-->
+        <item name="android:windowBackground">@color/colorPrimaryDark</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@style/AppTheme.WindowTransition</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowActionBar">false</item>
+    </style>
+
+
+
+    <style name="textsizetoolbar" parent="@style/Base.TextAppearance.AppCompat.Title">
+        <item name="android:textSize">@dimen/size_toolbar</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">@font/roboto_regular</item>
+        <item name="textAllCaps">true</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <style name="tvTitleStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/colorPrimary </item>
+        <item name="android:fontFamily">@font/roboto_medium</item>
+    </style>
+
+    <style name="checkboxMain">
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="MainOptionStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+    </style>
+    <style name="HorizontalLinearStyle">
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minHeight">@dimen/_60sdp</item>
+    </style>
+    <style name="MainOptionImageStyle">
+        <item name="android:padding">15dip</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerInParent">true</item>
+
+    </style>
+    <style name="MainOptionTitleStyle">
+        <item name="android:textSize">@dimen/ts_20</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/text_color</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="MainOptionLayoutStyle">
+        <item name="android:layout_gravity">center</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:paddingLeft">@dimen/duplicate_space_medium</item>
+        <item name="android:paddingRight">@dimen/duplicate_space_medium</item>
+    </style>
+
+
+</resources>

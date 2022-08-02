@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_incorrect_password"
+        android:title="@string/incorrect_password_entries"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_empty"
+        android:title="@string/empty"
+        app:showAsAction="never" />
+
+</menu>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+
+    <string name="confirm_exit">Do you really want to exit?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+
+    <string name="rate_msg">Our team are working very hard to give you the best free application. Your 5-star review is worth more than all money. Please write a nice review in Google Play to encourage me.</string>
+    <string name="remind_later">Remind later</string>
+    <string name="good_5_stars">Good, 5 stars</string>
+    <string name="not_good">Not good</string>
+    <string name="title_dialog_feed_back">Send a feed back</string>
+    <string name="message_dialog_feed_back">Request bug fix and implement new features via email</string>
+    <string name="exit_app">Exit</string>
+
+    <string name="confirm_close">Are you sure you want to close this activity?</string>
+
+    <string name="rate_app">Rate App</string>
+    <string name="install_app_ads">Install Now</string>
+
+    // Title mail and email feed back
+    <string name="Title_email" translatable="false">Title FeedBack</string>
+    <string name="email_feedback" translatable="false">emailne@gmail.com</string>
+
+    //Info id admob, you can change
+    test
+    <string name="admob_app_id" translatable="false">ca-app-pub-3940256099942544~3347511713</string>
+    <string name="admob_native" translatable="false">ca-app-pub-3940256099942544/2247696110</string>
+    <string name="admob_full" translatable="false">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="admob_banner" translatable="false">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="admob_open_app" translatable="false">ca-app-pub-3940256099942544/3419835294</string>
+
+    <string name="ads_fb_full" translatable="false">2379042515473010_2392946664082595</string>
+    <string name="ads_fb_banner" translatable="false">2379042515473010_2392947067415888</string>
+    <string name="ads_fb_native" translatable="false">2379042515473010_2379043072139621</string>
+</resources>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3867d6</color>
+<!--    <color name="colorPrimaryDark">#4b7bec</color>-->
+    <color name="colorPrimaryDark">#14042f</color>
+    <color name="colorAccent">#3867d6</color>
+
+    <color name="white">#ffffff</color>
+
+    <color name="text_color">#ff666666</color>
+    <!-- Use with black text -->
+    <color name="gray">#8f8f8f</color>
+    <color name="black">#000000</color>
+    <color name="background">#fcfcfc</color>
+
+
+    <!--new color-->
+
+
+    <color name="color_554c88">#554c88</color>
+    <color name="color_cc14042f">#cc14042f</color>
+
+    <color name="color_a8a8a8">#a8a8a8</color>
+    <color name="black_70">#B3000000</color>
+
+    <color name="color_ff60a2">#ff60a2</color>
+    <color name="color_60cfff">#60cfff</color>
+    <color name="color_a5a5ff">#a5a5ff</color>
+    <color name="color_726882">#726882</color>
+    <color name="color_ff4040">#ff4040</color>
+    <color name="color_ff8540">#ff8540</color>
+    <color name="color_1f1137">#1f1137</color>
+    <color name="color_cdbbff">#cdbbff</color>
+    <color name="color_7373e4">#7373e4</color>
+    <color name="color_4d4962">#4d4962</color>
+    <color name="color_9a9a9a">#9a9a9a</color>
+
+
+
+    <color name="color_33ffffff">#33ffffff</color>
+
+
+</resources>

@@ -1,0 +1,117 @@
+<resources>
+    <string name="app_name">Duplicate File Remover</string>
+
+    <string name="rating">Rate</string>
+    <string name="share">Share to friends</string>
+    <string name="policy">PRIVACY POLICY</string>
+
+    <string name="more_app">More App</string>
+    <string name="feedback">Feedback</string>
+    <string name="scan">Scan</string>
+
+    <string name="setting">Settings</string>
+    <string name="scan_wait">Please wait while scanning files...</string>
+
+    <string name="language_setting">Language</string>
+    <string-array name="arrLanguage">
+        //tieng cs
+        <item>Česky</item>
+        //de
+        <item>Deutsch</item>
+        // en
+        <item>English</item>
+        //es
+        <item>Español</item>
+        //fr
+        <item>Français</item>
+        //in
+        <item>Indonesia</item>
+        // it
+        <item>Italiano</item>
+        // tieng pl
+        <item>Polski</item>
+        // pt
+        <item>Português</item>
+
+        //nga
+        <item>Русский</item>
+
+        <item>Türkçe</item>
+        <item>Tiếng Việt</item>
+
+        //A rap
+        <item>العربية</item>
+        //Thai lan
+        <item>ไทย</item>
+
+
+        //Tieng bengali bn
+        <item>বাঙালি</item>
+
+
+        //Tieng hindi hi
+        <item>हिन्दी</item>
+
+        //Tieng tamil ta
+        <item>தமிழ்</item>
+
+
+    </string-array>
+    <string name="dat" translatable="false">dat</string>
+    <string name="bmp" translatable="false">bmp</string>
+    <string name="cache" translatable="false">cache</string>
+    <string name="css" translatable="false">css</string>
+    <string name="doc" translatable="false">doc</string>
+    <string name="docx" translatable="false">docx</string>
+    <string name="flac" translatable="false">flac</string>
+    <string name="gif" translatable="false">gif</string>
+    <string name="html" translatable="false">html</string>
+    <string name="jpeg" translatable="false">jpeg</string>
+    <string name="jpg" translatable="false">jpg</string>
+    <string name="js" translatable="false">js</string>
+    <string name="m4a" translatable="false">m4a</string>
+    <string name="mkv" translatable="false">mkv</string>
+    <string name="mp3" translatable="false">mp3</string>
+    <string name="mp4" translatable="false">mp4</string>
+    <string name="nomedia" translatable="false">nomedia</string>
+    <string name="ogg" translatable="false">ogg</string>
+    <string name="pdf" translatable="false">pdf</string>
+
+    <string name="txt" translatable="false">txt</string>
+    <string name="vcf" translatable="false">Vcf Files</string>
+    <string name="wav" translatable="false">wav</string>
+    <string name="webm" translatable="false">webm</string>
+    <string name="xlsx" translatable="false">xlsx</string>
+    <string name="xml" translatable="false">xml</string>
+    <string name="zip" translatable="false">Zip Files</string>
+
+    <string name="_3gp" translatable="false">3gp</string>
+    <string name="aac" translatable="false">aac</string>
+    <string name="amr" translatable="false">amr</string>
+    <string name="apk" translatable="false">Apk Files</string>
+    <string name="emptyshow" translatable="false">emptyshow</string>
+    <string name="png" translatable="false">png</string>
+
+    <string name="deleted_number_format">Deleted ... %d files</string>
+
+
+    <string name="scan_all_file">Scan All Other Files</string>
+    <string name="scan_audio_file">Scan Duplicate Audios</string>
+    <string name="scan_doc_file">Scan Duplicate Docs</string>
+    <string name="scan_image_file">Scan Duplicate Images</string>
+    <string name="scan_video_file">Scan Duplicate Videos</string>
+    <string name="analyzing">Analyzing...</string>
+    <string name="path" translatable="false">/storage/emulated/0/Yolo.doc</string>
+    <string name="_30_kb" translatable="false">30 KB</string>
+
+    <string name="sd_content_1">Please follow below instructions to grant permission to delete selected files.</string>
+    <string name="sd_content_2">If you dont see the SD card , try this .</string>
+    <string name="sd_title">Confirm External Storage Access</string>
+    <string name="no_file_found">No Duplicate Files Found</string>
+    <string name="delete_content">Do you want to delete the file?</string>
+    <string name="delete_title">Confirm Delete</string>
+    <string name="file_removed">Files Removed</string>
+    <string name="grant_permission">Grant Permission</string>
+    <string name="delete_now">Delete now</string>
+    <string name="deep_clean">deep_clean</string>
+</resources>

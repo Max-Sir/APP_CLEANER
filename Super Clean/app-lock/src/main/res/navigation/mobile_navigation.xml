@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.security.applock.ui.kidZone.KidZoneFragment"
+        tools:layout="@layout/fragment_kidzone" />
+
+    <fragment
+        android:id="@+id/nav_setting"
+        android:name="com.security.applock.ui.setting.SetttingFragment"
+        tools:layout="@layout/fragment_setting">
+
+        <action
+            android:id="@+id/action_setting_to_question"
+            app:destination="@+id/nav_question_confirm"
+            app:enterAnim="@anim/pull_in_right"
+            app:exitAnim="@anim/push_out_left"
+            app:popEnterAnim="@anim/pull_in_left"
+            app:popExitAnim="@anim/push_out_right" />
+
+        <action
+            android:id="@+id/action_nav_setting_to_acvanced"
+            app:destination="@id/nav_advanced_protection"
+            app:enterAnim="@anim/pull_in_right"
+            app:exitAnim="@anim/push_out_left"
+            app:popEnterAnim="@anim/pull_in_left"
+            app:popExitAnim="@anim/push_out_right" />
+
+        <action
+            android:id="@+id/action_nav_setting_to_nav_intruder"
+            app:destination="@id/nav_intruder"
+            app:enterAnim="@anim/pull_in_right"
+            app:exitAnim="@anim/push_out_left"
+            app:popEnterAnim="@anim/pull_in_left"
+            app:popExitAnim="@anim/push_out_right" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_intruder"
+        android:name="com.security.applock.ui.intruderSelfie.IntruderSelfieFragment"
+        tools:layout="@layout/fragment_intruder_selfie" />
+
+    <fragment
+        android:id="@+id/nav_question_confirm"
+        android:name="com.security.applock.ui.question.QuestionConfirmFragment"
+        tools:layout="@layout/fragment_question" />
+
+    <fragment
+        android:id="@+id/nav_theme"
+        android:name="com.security.applock.ui.themes.ThemesFragment"
+        tools:layout="@layout/fragment_themes_lock" />
+
+    <fragment
+        android:id="@+id/nav_advanced_protection"
+        android:name="com.security.applock.ui.advanced.FragmentAdvancedProtection"
+        tools:layout="@layout/fragment_advance_protection"/>
+
+    <action
+        android:id="@+id/action_nav_home_to_acvanced"
+        app:destination="@id/nav_advanced_protection" />
+</navigation>

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.lubuteam.sellsourcecode.supercleaner"
+    android:versionCode="1"
+    android:versionName="1.0.0">
+
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.FOREFGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.WRITE_SYNC_SETTINGS" />
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+    <uses-permission android:name="android.permission.ACCESS_NOTIFICATION_POLICY" />
+    <uses-permission android:name="android.permission.REQUEST_DELETE_PACKAGES" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.GET_PACKAGE_SIZE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.QUICKBOOT_POWERON" />
+    <uses-permission
+        android:name="android.permission.CLEAR_APP_CACHE"
+        tools:ignore="ProtectedPermissions" />
+
+    <uses-permission
+        android:name="android.permission.WRITE_SETTINGS"
+        tools:ignore="ProtectedPermissions" />
+    <!--applock-->
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission
+        android:name="android.permission.PACKAGE_USAGE_STATS"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <!--    <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS" />-->
+
+    <application
+        android:name="com.lubuteam.sellsourcecode.supercleaner.AppClean"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:screenOrientation="portrait"
+        android:supportsRtl="false"
+        android:theme="@style/Theme.AppCompat.Translucent"
+        tools:replace="android:theme">
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="@string/admob_app_id" />
+
+        <activity android:name="com.lubuteam.sellsourcecode.supercleaner.screen.splash.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.lubuteam.sellsourcecode.supercleaner.screen.main.MainActivity"
+            android:exported="true" />
+
+        <activity android:name="com.lubuteam.sellsourcecode.supercleaner.screen.setting.SettingActivity" />
+        <activity android:name="com.lubuteam.sellsourcecode.supercleaner.screen.phoneboost.PhoneBoostActivity" />
+        <activity android:name="com.lubuteam.sellsourcecode.supercleaner.screen.result.ResultAcitvity" />
+        <activity
+            android:name="com.lubuteam.sellsourcecode.supercleaner.screen.guildPermission.GuildPermissionActivity"
+            android:theme="@style/Theme.Transparent" />
+        <activity android:name="com.lubuteam.sellsourcecode.supercleaner.screen.junkfile.JunkFileActivity" />
+        <activity android:name="com.lubuteam.sellsourcecode.supercleaner.screen.listAppSelect.AppSelectActivity" />
+        <activity android:name="com.lubuteam.sellsourcecode.supercleaner.screen.gameboost.GameBoostActivity" />
+        <activity android:name="com.lubuteam.sellsourcecode.supercleaner.screen.appManager.AppManagerActivity" />
+        <activity android:name="com.lubuteam.sellsourcecode.supercleaner.screen.smartCharger.SmartChargerBoostActivity" />
+        <activity
+            android:name="com.lubuteam.sellsourcecode.supercleaner.screen.smartCharger.SmartChargerActivity"
+            android:theme="@style/Theme.AppCompat.Translucent.green" />
+        <activity android:name="com.lubuteam.sellsourcecode.supercleaner.screen.cleanNotification.NotificationCleanSettingActivity" />
+        <activity android:name="com.lubuteam.sellsourcecode.supercleaner.screen.cleanNotification.NotificationCleanActivity" />
+        <activity android:name="com.lubuteam.sellsourcecode.supercleaner.screen.cleanNotification.NotificationCleanGuildActivity" />
+        <activity android:name="com.lubuteam.sellsourcecode.supercleaner.screen.antivirus.AntivirusActivity" />
+        <activity android:name="com.lubuteam.sellsourcecode.supercleaner.screen.ExitActivity" />
+        <activity android:name="com.lubuteam.sellsourcecode.supercleaner.screen.antivirus.ScanAppInstallActivity" />
+        <activity android:name="com.lubuteam.sellsourcecode.supercleaner.screen.antivirus.ScanAppUninstallActivity" />
+        <activity android:name="com.lubuteam.sellsourcecode.supercleaner.screen.notDissturb.NotDissturbActivity" />
+
+        <service
+            android:name="com.lubuteam.sellsourcecode.supercleaner.service.ForceStopAccessibility"
+            android:label="@string/app_name"
+            android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE">
+            <meta-data
+                android:name="android.accessibilityservice"
+                android:resource="@xml/accessibility_service_config" />
+            <intent-filter>
+                <action android:name="android.accessibilityservice.AccessibilityService" />
+            </intent-filter>
+        </service>
+
+        <service
+            android:name="com.lubuteam.sellsourcecode.supercleaner.service.NotificationListener"
+            android:permission="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE">
+            <intent-filter>
+                <action android:name="android.service.notification.NotificationListenerService" />
+            </intent-filter>
+        </service>
+
+        <service
+            android:name="com.lubuteam.sellsourcecode.supercleaner.service.ServiceManager"
+            android:exported="false" />
+
+        <receiver android:name="com.lubuteam.sellsourcecode.supercleaner.receiver.BatteryStatusReceiver" />
+        <receiver android:name="com.lubuteam.sellsourcecode.supercleaner.receiver.PackageRecerver" />
+        <receiver android:name="com.lubuteam.sellsourcecode.supercleaner.receiver.AlarmReceiver">
+            <intent-filter>
+                <action android:name="com.app.action.alarmmanager" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name="com.lubuteam.sellsourcecode.supercleaner.receiver.AutoRebootReceiver"
+            android:enabled="true"
+            android:exported="true"
+            android:permission="android.permission.RECEIVE_BOOT_COMPLETED">
+            <intent-filter android:priority="99999">
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.SCREEN_ON" />
+                <action android:name="android.net.wifi.WIFI_STATE_CHANGED" />
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="android.net.wifi.STATE_CHANGE" />
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+                <action android:name="com.htc.intent.action.QUICKBOOT_POWERON" />
+            </intent-filter>
+        </receiver>
+
+    </application>
+
+</manifest>

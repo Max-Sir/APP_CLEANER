@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:orientation="vertical">
+
+<!--    <include-->
+<!--        android:id="@+id/layout_padding"-->
+<!--        layout="@layout/layout_toolbar" />-->
+
+    <com.lubuteam.sellsourcecode.supercleaner.widget.CustomViewPager
+        android:id="@+id/viewpager_home"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_control_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        app:itemIconTint="@color/bottom_nav_color"
+        android:background="@color/black"
+        app:itemTextColor="@color/bottom_nav_color"
+        app:menu="@menu/navigation_home" />
+
+</LinearLayout>

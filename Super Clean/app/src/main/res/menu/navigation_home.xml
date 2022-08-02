@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/ic_nav_home"
+        android:title="@string/title_home"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/navigation_tools"
+        android:icon="@drawable/ic_nav_tool"
+        android:title="@string/title_tool"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/navigation_personal"
+        android:icon="@drawable/ic_nav_personal"
+        android:title="@string/title_persional"
+        app:showAsAction="ifRoom" />
+</menu>

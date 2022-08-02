@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#80000000"
+    android:clickable="true"
+    android:focusable="true">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:adjustViewBounds="true"
+        android:alpha="0.2"
+        android:src="@drawable/bg_wave_blue"
+        app:tint="@android:color/white" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/av_clean_file"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_300sdp"
+        android:layout_centerInParent="true"
+        app:lottie_fileName="junk_clean.json"
+        app:lottie_imageAssetsFolder="junk_clean"
+        app:lottie_loop="true" />
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/im_iconApp"
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_centerInParent="true" />
+
+</RelativeLayout>

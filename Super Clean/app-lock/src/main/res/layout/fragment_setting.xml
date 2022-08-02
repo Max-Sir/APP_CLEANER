@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:overScrollMode="never"
+    tools:context=".ui.setting.SetttingFragment">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/shape_bgr_container"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingHorizontal="@dimen/_20sdp"
+            android:paddingVertical="@dimen/_10sdp">
+
+            <com.security.applock.widget.MenuFunction
+                android:id="@+id/func_sercurity_question"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:inf_icon="@drawable/ic_logo"
+                app:inf_show_icon="false"
+                app:inf_show_icon_subcription="true"
+                app:inf_title="@string/sercurity_question" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/color_554c88" />
+
+            <com.security.applock.widget.MenuFunction
+                android:id="@+id/func_limit_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:inf_icon="@drawable/ic_logo"
+                app:inf_show_icon="false"
+                app:inf_show_icon_subcription="true"
+                app:inf_title="@string/limit_lock_time"
+                tools:inf_description="always locked" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/color_554c88" />
+
+            <com.security.applock.widget.MenuFunction
+                android:id="@+id/func_change_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:inf_icon="@drawable/ic_logo"
+                app:inf_show_icon="false"
+                app:inf_show_icon_subcription="true"
+                app:inf_title="@string/change_password" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/color_554c88" />
+
+            <com.security.applock.widget.MenuFunction
+                android:id="@+id/func_switch_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:inf_icon="@drawable/ic_logo"
+                app:inf_show_icon="false"
+                app:inf_show_icon_subcription="true"
+                app:inf_title="@string/switch_to_password" />
+
+            <!--        <View-->
+            <!--            android:layout_width="match_parent"-->
+            <!--            android:layout_height="1dp"-->
+            <!--            android:background="@color/color_554c88" />-->
+
+            <!--        <com.security.applock.widget.MenuFunction-->
+            <!--            android:id="@+id/func_hide_pattern"-->
+            <!--            android:layout_width="match_parent"-->
+            <!--            android:layout_height="wrap_content"-->
+            <!--            app:inf_icon="@drawable/ic_logo"-->
+            <!--            app:inf_show_icon="false"-->
+            <!--            app:inf_show_switch_check="true"-->
+            <!--            app:inf_title="@string/hide_pattern" />-->
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/color_554c88" />
+
+            <com.security.applock.widget.MenuFunction
+                android:id="@+id/func_lock_new_app"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:inf_icon="@drawable/ic_logo"
+                app:inf_show_icon="false"
+                app:inf_show_switch_check="true"
+                app:inf_title="@string/lock_new_app" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/color_554c88"
+                android:visibility="gone" />
+
+            <com.security.applock.widget.MenuFunction
+                android:id="@+id/func_advanced_detection"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                app:inf_icon="@drawable/ic_logo"
+                app:inf_show_icon="false"
+                app:inf_show_icon_subcription="true"
+                app:inf_title="@string/advanced_detection" />
+
+            <View
+                android:id="@+id/func_fingerprint_separator"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/color_554c88" />
+
+            <com.security.applock.widget.MenuFunction
+                android:id="@+id/func_fingerprint"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:inf_icon="@drawable/ic_logo"
+                app:inf_show_icon="false"
+                app:inf_show_switch_check="true"
+                app:inf_title="@string/finger_unlock" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/color_554c88"
+                android:visibility="gone" />
+
+            <com.security.applock.widget.MenuFunction
+                android:id="@+id/func_intruder_selfie"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                app:inf_icon="@drawable/ic_logo"
+                app:inf_show_icon="false"
+                app:inf_show_switch_check="true"
+                app:inf_title="@string/intruder_selfie" />
+
+            <!--        <View-->
+            <!--            android:layout_width="match_parent"-->
+            <!--            android:layout_height="1dp"-->
+            <!--            android:background="@color/color_554c88" />-->
+
+            <!--        <com.security.applock.widget.MenuFunction-->
+            <!--            android:id="@+id/func_language"-->
+            <!--            android:layout_width="match_parent"-->
+            <!--            android:layout_height="wrap_content"-->
+            <!--            app:inf_icon="@drawable/ic_logo"-->
+            <!--            app:inf_show_icon="false"-->
+            <!--            app:inf_show_icon_subcription="true"-->
+            <!--            app:inf_title="@string/change_language" />-->
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/color_554c88" />
+
+            <com.security.applock.widget.MenuFunction
+                android:id="@+id/func_rate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:inf_icon="@drawable/ic_logo"
+                app:inf_show_icon="false"
+                app:inf_show_icon_subcription="true"
+                app:inf_title="@string/rate" />
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

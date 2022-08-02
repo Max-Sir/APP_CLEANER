@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark">
+
+    <LinearLayout
+        android:id="@+id/ll_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:adjustViewBounds="true"
+                android:src="@drawable/bg_header" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="@dimen/_80sdp"
+                android:layout_height="@dimen/_80sdp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_sheild_advanced" />
+
+        </RelativeLayout>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_20sdp"
+            android:gravity="center"
+            android:text="@string/header_advanced"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/_12sdp" />
+
+    </LinearLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:background="@drawable/shape_bgr_container"
+        android:overScrollMode="never"
+        android:paddingHorizontal="@dimen/_20sdp"
+        android:paddingVertical="@dimen/_10sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ll_header">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.security.applock.widget.MenuFunction
+                android:id="@+id/func_use_camera"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:inf_description="@string/take_photos_intruders"
+                app:inf_icon_2="@drawable/ic_number_1"
+                app:inf_show_icon_subcription="true"
+                app:inf_title="@string/used_camera" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/color_554c88" />
+
+            <com.security.applock.widget.MenuFunction
+                android:id="@+id/func_stable"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:inf_description="@string/keep_applock_smoothly"
+                app:inf_icon_2="@drawable/ic_number_2"
+                app:inf_show_icon_subcription="true"
+                app:inf_title="@string/stable_operation" />
+
+            <com.security.applock.widget.MenuFunction
+                android:id="@+id/func_saving"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                app:inf_description="@string/saving_extending_pin_life"
+                app:inf_icon_2="@drawable/ic_number_3"
+                app:inf_show_icon_subcription="true"
+                app:inf_title="@string/energy_saving" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/color_554c88" />
+
+            <com.security.applock.widget.MenuFunction
+                android:id="@+id/func_popup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:inf_description="@string/keep_applock_background"
+                app:inf_icon_2="@drawable/ic_number_3"
+                app:inf_show_icon_subcription="true"
+                app:inf_title="@string/popup" />
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

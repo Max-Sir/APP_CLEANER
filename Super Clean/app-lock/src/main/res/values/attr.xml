@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="MenuFunction">
+        <attr name="inf_title" format="string" />
+        <attr name="inf_description" format="string" />
+        <attr name="inf_icon" format="reference" />
+        <attr name="inf_icon_2" format="reference" />
+        <attr name="inf_icon_sub" format="reference" />
+        <attr name="inf_show_icon_subcription" format="boolean" />
+        <attr name="inf_show_icon" format="boolean" />
+        <attr name="inf_show_switch_check" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="PatternLockView">
+        <attr name="lock_size" format="integer" />
+        <attr name="lock_nodeSize" format="dimension" />
+        <attr name="lock_nodeOnAnim" format="reference" />
+        <attr name="lock_padding" format="dimension" />
+        <attr name="lock_spacing" format="dimension" />
+        <attr name="lock_enableVibrate" format="boolean" />
+        <attr name="lock_vibrateTime" format="integer" />
+        <attr name="lock_nodeSrc" format="color|reference" />
+        <attr name="lock_nodeHighlightSrc" format="color|reference" />
+        <attr name="lock_nodeCorrectSrc" format="color|reference" />
+        <attr name="lock_nodeErrorSrc" format="color|reference" />
+        <attr name="lock_lineColor" format="color" />
+        <attr name="lock_lineCorrectColor" format="color" />
+        <attr name="lock_lineErrorColor" format="color" />
+        <attr name="lock_lineWidth" format="dimension" />
+        <attr name="lock_nodeTouchExpand" format="dimension" />
+        <attr name="lock_autoLink" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="PinView">
+        <attr name="itemCount" format="integer" />
+        <attr name="itemWidth" format="dimension" />
+        <attr name="itemHeight" format="dimension" />
+        <attr name="itemRadius" format="dimension" />
+        <attr name="itemSpacing" format="dimension" />
+        <attr name="lineWidth" format="dimension" />
+        <attr name="lineColor" format="reference|color" />
+        <attr name="viewType" format="enum">
+            <enum name="rectangle" value="0" />
+            <enum name="line" value="1" />
+            <enum name="none" value="2" />
+        </attr>
+        <attr name="android:cursorVisible" />
+        <attr name="cursorWidth" format="dimension" />
+        <attr name="cursorColor" format="reference|color" />
+        <attr name="android:itemBackground" />
+        <attr name="hideLineWhenFilled" format="boolean" />
+    </declare-styleable>
+</resources>

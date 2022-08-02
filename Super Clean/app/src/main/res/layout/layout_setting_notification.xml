@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="@dimen/_10sdp"
+    android:orientation="vertical"
+    tools:background="@color/colorPrimaryDark">
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:minHeight="@dimen/_50sdp"
+        android:paddingHorizontal="@dimen/_10sdp"
+        android:text="@string/antivirus_settings"
+        android:textColor="@color/color_a5a5ff"
+        android:textSize="@dimen/_12sdp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_1f1137"
+        android:gravity="center_vertical"
+        android:minHeight="@dimen/_50sdp"
+        android:orientation="horizontal"
+        android:paddingHorizontal="@dimen/_10sdp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_weight="1"
+            android:text="@string/real_time_protection"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/_13sdp" />
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/sw_protection_real_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:theme="@style/Custom.Widget.SwitchCompat" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_ignore_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="@color/color_1f1137"
+        android:gravity="center_vertical"
+        android:minHeight="@dimen/_50sdp"
+        android:orientation="horizontal"
+        android:paddingHorizontal="@dimen/_10sdp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_weight="1"
+            android:text="@string/ignore_list"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/_13sdp" />
+
+        <ImageView
+            android:layout_width="@dimen/_21sdp"
+            android:layout_height="@dimen/_21sdp"
+            android:src="@drawable/ic_arrow_right" />
+
+    </LinearLayout>
+
+</LinearLayout>

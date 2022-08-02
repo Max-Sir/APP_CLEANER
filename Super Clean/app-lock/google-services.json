@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "884145065910",
+    "project_id": "applock-dc96d",
+    "storage_bucket": "applock-dc96d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:884145065910:android:b9dbd87d432455b169bb17",
+        "android_client_info": {
+          "package_name": "com.security.applock"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "884145065910-b86sj99ns5gs6ta71899d6bhncs9q6vp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBIvSNeuPWQR1qh_rMJtFWeqCywn0cQmUg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "884145065910-b86sj99ns5gs6ta71899d6bhncs9q6vp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

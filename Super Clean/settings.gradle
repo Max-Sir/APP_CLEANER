@@ -1,0 +1,2 @@
+include ':app', ':dupicate_file',':app-lock'
+include ':ads'

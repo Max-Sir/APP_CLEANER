@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark">
+
+    <ImageView
+        android:id="@+id/im_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY" />
+
+    <FrameLayout
+        android:id="@+id/ll_header"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintHeight_percent="0.4"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <include
+            android:id="@+id/ll_header_lockview"
+            layout="@layout/layout_header_lockview" />
+
+    </FrameLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/ll_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHeight_percent="0.6"
+        app:layout_constraintTop_toBottomOf="@id/ll_header">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/im_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/shape_bgr_container" />
+
+        <com.security.applock.widget.PatternLockView
+            android:id="@+id/pattern_code_default"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:clipChildren="false"
+            android:clipToPadding="false"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:lock_autoLink="true"
+            app:lock_enableVibrate="true"
+            app:lock_lineColor="@color/color_a5a5ff"
+            app:lock_lineCorrectColor="@color/colorPrimaryDark"
+            app:lock_lineErrorColor="@color/color_ff4040"
+            app:lock_lineWidth="@dimen/_8sdp"
+            app:lock_nodeHighlightSrc="@drawable/shape_node_highlight"
+            app:lock_nodeSize="@dimen/_10sdp"
+            app:lock_nodeSrc="@drawable/shape_node_normal"
+            app:lock_nodeTouchExpand="@dimen/_40sdp"
+            app:lock_size="3"
+            app:lock_spacing="@dimen/_80sdp" />
+
+        <com.security.applock.widget.PatternLockView
+            android:id="@+id/pattern_code_white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:clipChildren="false"
+            android:clipToPadding="false"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:lock_autoLink="true"
+            app:lock_enableVibrate="true"
+            app:lock_lineColor="@color/color_a5a5ff"
+            app:lock_lineCorrectColor="@color/colorPrimaryDark"
+            app:lock_lineErrorColor="@color/color_ff4040"
+            app:lock_lineWidth="@dimen/_8sdp"
+            app:lock_nodeHighlightSrc="@drawable/shape_node_highlight"
+            app:lock_nodeSize="@dimen/_10sdp"
+            app:lock_nodeSrc="@drawable/shape_node_normal"
+            app:lock_nodeTouchExpand="@dimen/_40sdp"
+            app:lock_size="3"
+            app:lock_spacing="@dimen/_80sdp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_forgot_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_5sdp"
+        android:padding="@dimen/_8sdp"
+        android:text="@string/forgot_password"
+        android:textColor="@android:color/white"
+        android:textStyle="italic"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:visibility="visible" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
